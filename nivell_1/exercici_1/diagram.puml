@@ -1,0 +1,19 @@
+@startuml
+skinparam  classAttributeIconSize 0
+abstract class Animal {
+    - name: string
+    - scientificName: string
+    + getName(): string
+    + getScientificName(): string
+    + {abstract} makeSound(): string
+}
+class Human {
+    + sum(...addends: float): float
+}
+class Cow {
+    - isHorned: bool
+    + getIsHorned(): bool
+}
+Human --|> Animal
+Cow --|> Animal
+@enduml
