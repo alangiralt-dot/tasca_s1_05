@@ -11,9 +11,10 @@ $h1 = new Human('James', 'Homo sapiens');
 $c1 = new Cow('Betsy', 'Bos taurus', true);
 $c2 = new Cow('Dorothy', 'Bos taurus', true);
 $c3 = new Cow('Clarabelle', 'Bos taurus', false);
-$animals = [$c1, $l1, $c2, $h1, $c3];
+$animals = [$c1, $l1, $c2, $h1, $c3, 3, 'abc'];
 foreach ($animals as $a) {
     echo '--------------------------------' . PHP_EOL;
+    if (!is_object($a)) continue;
     if (!$a instanceof Animal) {
         //throw new InvalidArgumentException('$a is not an instance of Animal');
         echo '$a is an instance of ' . get_class($a) . PHP_EOL;
