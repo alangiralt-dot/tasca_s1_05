@@ -6,6 +6,13 @@ abstract class Shape {
         protected float $width,
         protected float $height) {
     }
+    // Getters
+    public function getWidth() {
+        return $this->width;
+    }
+    public function getHeight() {
+        return $this->height;
+    }
     //Methods
-    abstract function calculateArea(): float;
+    public abstract function calculateArea(): float;
 }
