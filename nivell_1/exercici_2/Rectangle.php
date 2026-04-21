@@ -5,6 +5,6 @@ class Rectangle extends Shape {
         parent::__construct($width,$height);
     }
     public function calculateArea(): float {
-        return $this->width * $this->height; 
+        return $this->getWidth() * $this->getHeight(); 
     }
 }

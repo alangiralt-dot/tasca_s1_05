@@ -5,6 +5,6 @@ class Triangle extends Shape {
         parent::__construct($width,$height);
     }
     public function calculateArea(): float {
-        return $this->width * $this->height / 2;
+        return $this->getWidth() * $this->getHeight() / 2;
     }
 }
