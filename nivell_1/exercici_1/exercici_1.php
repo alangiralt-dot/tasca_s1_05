@@ -8,7 +8,7 @@ class Letter {
 }
 $l1 = new Letter('C');
 $h1 = new Human('James', 'Homo sapiens');
-$c1 = new Cow('Betsy', 'Bos taurus', true);
+$c1 = new Cow('Betsy', 'Bos indicus', true);
 $c2 = new Cow('Dorothy', 'Bos taurus', true);
 $c3 = new Cow('Clarabelle', 'Bos taurus', false);
 $animals = [$c1, $l1, $c2, $h1, $c3, 3, 'abc'];
