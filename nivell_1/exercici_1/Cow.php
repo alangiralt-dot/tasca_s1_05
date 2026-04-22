@@ -4,7 +4,7 @@ class Cow extends Animal{
     // Attributes
     private bool $isHorned;
     // Constructor
-    function __construct($name, $scientificName, $isHorned) {
+    public function __construct(string $name, string $scientificName, bool $isHorned) {
         parent::__construct($name, $scientificName);
         $this->isHorned = $isHorned;
     }

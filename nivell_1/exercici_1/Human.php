@@ -1,10 +1,6 @@
 <?php
 declare(strict_types=1);
 class Human extends Animal {
-    // Constructor
-    function __construct($name, $scientificName) {
-        parent::__construct($name, $scientificName);
-    }
     // Methods
     public function makeSound(): string {
         return 'Hmm...';
