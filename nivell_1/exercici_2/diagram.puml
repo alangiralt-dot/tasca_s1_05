@@ -5,6 +5,8 @@ abstract class Shape{
     - height: float
     + getWidth(): float
     + getHeight(): float
+    + setWidth(): float
+    + setHeight(): float
     + {abstract} calculateArea(): float
 }
 class Rectangle
