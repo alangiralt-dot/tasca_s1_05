@@ -5,7 +5,10 @@ abstract class Animal {
     public function __construct(
         private string $name,
         private string $scientificName
-    ){}
+    ){
+        if(mb_strlen($name) === 0) throw new InvalidArgumentException('$name is empty');
+        if(mb_strlen($scientificName) === 0) throw new InvalidArgumentException('$scientificName is empty');
+    }
     // Getters
     public function getName(): string {
         return $this->name;
