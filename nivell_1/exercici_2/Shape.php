@@ -2,7 +2,7 @@
 declare(strict_types=1);
 abstract class Shape {
     // Constructor
-    function __construct(
+    public function __construct(
         private float $width,
         private float $height) {
         if ($this->width <= 0) throw new InvalidArgumentException('$width is less or equal to 0');
