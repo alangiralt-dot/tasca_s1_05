@@ -1,0 +1,29 @@
+@startuml
+skinparam classAttributeIconSize 0
+interface PlaneMesuration {
+    + calculateArea(): float
+}
+class Rectangle {
+    - base: float
+    - height: float
+}
+class Triangle {
+    - a: float
+    - b: float
+    - c: float
+}
+class Circle {
+    - radius: float
+}
+class Check {
+    - __construct()
+    + {static} greaterThanZero(real: float): void
+    + {static} triangleSides(a: float, b: float, c: float): void
+}
+Rectangle ..|> PlaneMesuration
+Triangle ..|> PlaneMesuration
+Circle ..|> PlaneMesuration
+Rectangle ..> Check
+Triangle ..> Check
+Circle ..> Check
+@enduml
