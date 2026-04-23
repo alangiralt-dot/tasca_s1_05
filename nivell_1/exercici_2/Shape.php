@@ -3,22 +3,22 @@ declare(strict_types=1);
 abstract class Shape {
     // Constructor
     public function __construct(
-        private float $width,
+        private float $base,
         private float $height) {
-        if ($this->width <= 0) throw new InvalidArgumentException('$width is less or equal to 0');
+        if ($this->base <= 0) throw new InvalidArgumentException('$base is less or equal to 0');
         if ($this->height <= 0) throw new InvalidArgumentException('$height is less or equal to 0');
     }
     // Getters
-    public function getWidth(): float {
-        return $this->width;
+    public function getBase(): float {
+        return $this->base;
     }
     public function getHeight(): float {
         return $this->height;
     }
     // Setters
-    public function setWidth(float $width): void {
-        if ($width <= 0) throw new InvalidArgumentException('$width is less or equal to 0');
-        $this->width = $width;
+    public function setBase(float $base): void {
+        if ($base <= 0) throw new InvalidArgumentException('$base is less or equal to 0');
+        $this->base = $base;
     }
     public function setHeight(float $height): void {
         if ($height <= 0) throw new InvalidArgumentException('$height is less or equal to 0');

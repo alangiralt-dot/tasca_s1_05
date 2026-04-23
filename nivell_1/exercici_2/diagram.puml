@@ -1,11 +1,11 @@
 @startuml
 skinparam classAttributeIconSize 0
 abstract class Shape{
-    - width: float
+    - base: float
     - height: float
-    + getWidth(): float
+    + getBase(): float
     + getHeight(): float
-    + setWidth(): void
+    + setBase(): void
     + setHeight(): void
     + {abstract} calculateArea(): float
 }
